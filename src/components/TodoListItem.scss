@@ -1,0 +1,52 @@
+@import "open-color"; // color preview 위해서 개발할 때만..
+
+.TodoListItem {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+
+  &:nth-child(even) {
+    background: $oc-gray-1;
+  }
+
+  .checkbox {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    cursor: pointer;
+    svg {
+      font-size: 1.5rem;
+    }
+
+    .text {
+      margin-left: 0.5rem;
+      flex: 1;
+    }
+
+    &.checked {
+      svg {
+        color: $oc-cyan-4;
+      }
+
+      .text {
+        color: $oc-gray-4;
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  .remove {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: $oc-red-6;
+    cursor: pointer;
+    &:hover {
+      color: $oc-red-8;
+    }
+  }
+
+  & + & {
+    border-top: 1px solid $oc-gray-3;
+  }
+}

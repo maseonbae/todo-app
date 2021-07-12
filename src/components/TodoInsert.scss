@@ -1,0 +1,39 @@
+@import "open-color"; // color preview 위해서 개발할 때만..
+
+.TodoInsert {
+  display: flex;
+  background: $oc-gray-8;
+  input[type=text] {
+    margin: 0;
+    padding: 0.5rem;
+    border: 0;
+    outline: 0;
+    font-size: 1.125rem;
+    line-height: 150%;
+    color: #fff;
+    background: none;
+
+    &::placeholder {
+      color: $oc-gray-5;
+    }
+
+    flex: 1;
+  }
+
+  button {
+    display: flex;
+    margin: 0;
+    padding: 0 1rem;
+    border: 0;
+    outline: 0;
+    font-size: 1.5rem;
+    align-items: center;
+    color: #fff;
+    background: $oc-gray-6;
+    cursor: pointer;
+    transition: 0.1s background ease-in;
+    &:hover {
+      background: $oc-cyan-4;
+    }
+  }
+}

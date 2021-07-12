@@ -1,0 +1,23 @@
+@import "open-color"; // color preview 위해서 개발할 때만..
+//@import "~open-color/open-color";
+
+.TodoTemplate {
+  width: 512px;
+  margin: 6rem auto 0;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .app-title {
+    display: flex;
+    height: 4rem;
+    font-size: 1.5rem;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    background: $oc-cyan-7;
+  }
+
+  .content {
+    background: white;
+  }
+}
